@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yashwanth">
+    <meta class="description" content="My Portfolio Website">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/38d7838861.js"></script>
+</head>
+<body>
+<!--  main section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>MY PORTFOLIO</h1>
+                <ul id="side-menu">
+                    <li><a href="#" id="main-nav">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#extra-cur">Extra-curriculars</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="bio">
+                <h3> Hi,I'm Mori Yashwanth Vardhan,</h3>
+                <p> currently studying as an undergraduate student <br>at IIT Palakkad.
+                    From the mechanical department.
+                </p>
+            </div>
+        </div>
+    </div>
+<!--  about me  section -->
+    <div id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="left-side">
+                <img src="img/myphoto.jpeg">
+            </div>
+                <div class="text">
+                    <h3 class="title">About Me</h3>
+                    <br>
+                    <p> <strong> Name:</strong> Mori yashwanth Vardhan <br>
+                        <strong>College:</strong> IIT Palakkad <br>
+                        <strong>Branch:</strong> Btech  Mechanical engineering <br>
+                        <strong>Skills:</strong> front-end development and Web Design <br>
+                        <strong>My Opinion:</strong>
+                        " my main motto is to provide a great output experience for the
+                 clients."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------Projects------>
+<div id="project">
+    <div class="container">
+        <h1 class="project-title">Projects</h1>
+        <div class="project-list">
+            <div>
+                <img src="img/projects img.webp"> <br>
+                <h2>A financial website.</h2>
+                <p> The project is based on a website related
+                    to a finance company. 
+                </p>
+                <a href="#project">More Info</a>
+            </div>
+            <div>
+                <img src="img/project img 2.jpeg"> <br>
+                <h2>A Restaurant Website.</h2>
+                <p>This project is a special project for me 
+                    to design related to one of the famous Restaurant
+                </p>
+                <a href="#project">More Info</a>
+            </div>
+            <div>
+                <img src="img/project img 3.jpeg"> <br>
+                <h2>An E-commerce website.</h2>
+                <p>This site is related to a famous e-commerce site
+                    i had made for the clients regarding his convience, 
+                    it is  a great project to work on it.
+                </p>
+                <a href="#project">More Info</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------- extra-curricular activities --------->
+<div id="extra-cur" >
+    <div class="container">
+        <h1 class="title"> Extra-curricular Activities</h1>
+        <div class="activity-list">
+            <div class="activity">
+                <img src="img/sports img.avif"> 
+                <div class="layer">
+                    <h3>Sports</h3>
+                    <p>playing volleyball is my great experience.
+                        I had played many tournaments too.
+                    </p>
+                </div>
+            </div>
+            <div class="activity">
+                <img src="img/hackathon img.jpeg"> 
+                <div class="layer">
+                    <h3>Hackathons</h3>
+                    <p>Iam loved to participate in the Hackathons
+                        which are held during college times and 
+                        private contest in online.
+                    </p>
+                </div>
+            </div>
+            <div class="activity">
+                <img src="img/design img.jpeg"> 
+                <div class="layer">
+                    <h3>Designing</h3>
+                    <p>one of my favourite hobby is 
+                        designing like banners , logos
+                        thumbinals and many more.
+                        i make it with great interest 
+                        and passionate.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!--------------------Contact Me------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-info">
+                <h1 class="title">Contact Me</h1>
+                <p> <i class="fas fa-envelope"></i> contactme@gmail.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="img/cv image.jpeg" download="" class="btn2">Download CV</a>
+            </div>
+            <div class="contact-form">
+                <form id="form">
+                    <input type="text" id="username" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your E-mail" required>
+                    <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+    <p>  Copyright &#169; yashwanth </p>
+    </div>
+</div>
+<!---------js code for navbar menu section---------->
+<script>
+    var  sidemenu = document.getElementById("side-menu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script src="contactform.js"></script>
+</body>
+</html>
