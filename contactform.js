@@ -37,4 +37,4 @@ const validate = (e) => {
      return true;
 }
 
-submitBtn.addEventListener('click', validate);
+submitBtn.addEventListener('click', validate, alert("Your response submitted!"));
